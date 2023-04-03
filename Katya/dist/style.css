@@ -48,3 +48,37 @@
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 20px;
 }
+.container .prof-title {
+  width: 100%;
+  background-image: url(../images/fon.png);
+}
+.container .prof-title .profile-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.container .prof-title .profile {
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 30px;
+  margin: 20px auto;
+  display: flex;
+  padding: 50px;
+  gap: 30px;
+}
+.container .prof-title .profile img {
+  border-radius: 30px;
+}
+.container .prof-title .profile-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  justify-content: center;
+}
+.container .prof-title .profile-info li {
+  display: flex;
+}
