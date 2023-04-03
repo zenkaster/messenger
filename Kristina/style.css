@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.profile{
+    width: 400px;
+}
+
+.profile-header{
+    display: flex;
+}
+
+.profile-header h2{
+    width: 80%;
+}
+
+.profile-header a{
+    width: 10%;
+}
+
+.profile-info li{
+    display: flex;
+}
+
+.profile-info-notifications{
+    display: flex;
+}
