@@ -39,3 +39,67 @@
 // socket.addEventListener("error", (event) => {
 // 	console.error("Websocket error", event);
 // })
+const URL = "http://172.28.0.202:7000/users";
+fetch(URL) 
+.then(response => response.json()) 
+.then(data => { 
+    console.log(data); 
+})
+// const URL = "http://172.28.0.202:7000/users"; 
+ 
+// const profileCont = document.querySelector(".profile"); 
+ 
+// fetch(URL) 
+// .then(response => response.json()) 
+// .then(data => { 
+//     console.log(data); 
+// 		console.log(data[0].email);
+ 
+//     const profileHeader = document.createElement("div"); 
+//     profileHeader.classList.add("profile-header"); 
+//     profileHeader.innerHTML = ` 
+//         <a href="#">&times</a> 
+//         <h2>User info</h2> 
+//         <a href="#">&#128396</a> 
+//     `; 
+
+//     const profilePhoto = document.createElement("div"); 
+//     profilePhoto.classList.add("profile-photo"); 
+//     profilePhoto.innerHTML = ` 
+//         <img src="#" alt="userAvatar"> 
+//         <h2>A A</h2> 
+//         <h4>${data[0].email}</h4> 
+//     `; 
+ 
+//     const profileInfo = document.createElement("ul"); 
+//     profileInfo.classList.add("profile-info"); 
+//     profileInfo.innerHTML = ` 
+//         <li> 
+//         <img src="" alt="icon"> 
+//         <div class="profile-info-phone"> 
+//             <h3>+777</h3> 
+//             <h5>Телефон</h5> 
+//         </div> 
+//         </li> 
+//         <li> 
+//         <img src="" alt="icon"> 
+//         <div class="profile-info-username"> 
+//             <h3>A</h3> 
+//             <h5>Username</h5> 
+//         </div> 
+//         </li> 
+//         <li> 
+//         <img src="" alt="icon"> 
+//         <div class="profile-info-notifications"> 
+//             <h3>Notifications</h3> 
+//             <input type="checkbox" name="notifications" id="notifications"> 
+//         </div> 
+//         </li> 
+//     `; 
+ 
+ 
+//     profileCont.append(profileHeader); 
+//     profileCont.append(profilePhoto); 
+//     profileCont.append(profileInfo); 
+// }) 
+// .catch(error => console.error(error));
