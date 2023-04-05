@@ -39,11 +39,26 @@
 // socket.addEventListener("error", (event) => {
 // 	console.error("Websocket error", event);
 // })
+const chatsBottom = document.querySelector(".chats-bottom")
 const URL = "http://172.28.0.202:7000/users";
 fetch(URL) 
 .then(response => response.json()) 
 .then(data => { 
-    console.log(data); 
+		console.log(data);
+		data.forEach(element => {
+			console.log(element);
+			const oneChat = `
+			<div class="chats-chat" id="${element.id}">
+				<div class="chat-header-right">
+					<img class="chat-header-right-img" src="images/logo-of-chat.png" alt="#">
+					<h2 class="chat-header-right-h2">${element.email}</h2>
+				</div>
+			</div>
+			<hr>
+			`
+			chatsBottom.insertAdjacentHTML("beforeend", oneChat)
+		});
+
 })
 // const URL = "http://172.28.0.202:7000/users"; 
  
