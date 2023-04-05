@@ -129,6 +129,11 @@
   padding: 15px;
   gap: 20px;
 }
+.container-of-chats .chat-header-right h2 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .container-of-chats .chat {
   position: relative;
 }

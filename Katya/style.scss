@@ -142,6 +142,11 @@ $container-width: 1440px;
             align-items: center;
             padding: 15px;
             gap: 20px;
+            h2 {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
         }
         .chat {
             position: relative;
