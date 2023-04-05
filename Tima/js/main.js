@@ -1,4 +1,4 @@
-const dom = 'http://172.28.0.202:8000'
+const dom = 'http://172.28.0.202:7000'
 const create = '/users'
 
 const users = async() =>{
@@ -13,7 +13,6 @@ const users = async() =>{
     } catch(e){
         console.log(e);
     }
-
 }
 
 const createUser = async() => {
@@ -24,13 +23,14 @@ const createUser = async() => {
             'Content-Type': 'application/json',
         },
         body:JSON.stringify({
-            'email':213 ,
-            'password': 213,
+            'email': 121232133,
+            'password': 122132133,
         })
     })
     try{
         const req = await data.json();
         console.log(req);
+        return req;
     }catch(error){
         console.error(error);
     }
@@ -38,3 +38,4 @@ const createUser = async() => {
 
 createUser();
 users()
+
