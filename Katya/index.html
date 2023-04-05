@@ -8,9 +8,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+        <title>Document</title>
 </head>
 <body>
+
+    <!-- <form id="form">
+        <input type="text" name="" id="inp">
+        <input type="submit" value="odfsjfjd">
+    </form> -->
     <div class="container">
         <section class="sign">
             <div class="header">
@@ -27,13 +35,23 @@
             </div>
             <div class="title">
                 <div class="title-forms">
-                    тут могла быть тимина форма но он ее не скинул
+                    <form id="user-create" class="form ">
+                        <input type="email" title="Email" placeholder="Email">
+                        <input type="password" title="Password" placeholder="Password">
+                        <input type="submit">
+                    </form>
+                
+                    <form id="user-auth" class="form hide">
+                        <input type="email" title="Email" placeholder="Email">
+                        <input type="password" title="Password" placeholder="Password">
+                        <input type="submit">
+                    </form>
                 </div>
             </div>
             
         </section>
 
-        <section class="prof-title">
+        <!-- <section class="prof-title">
             <div class="profile-header">
                 <h2><a href="#">&#171 Chats</a></h2>
                 <h2>User info</h2>
@@ -69,7 +87,85 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
+
+        <div class="container-of-chats">
+            <div class="chats">
+                <div class="chats-top">
+                    <div class="chats-profile">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="chats-bottom">
+                    <div class="chats-chat">
+                        <div class="chat-header-right">
+                            <img class="chat-header-right-img" src="images/user (2).png" alt="#">
+                            <h2 class="chat-header-right-h2">Название чата</h2>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="chats-chat">
+                        <div class="chat-header-right">
+                            <img class="chat-header-right-img" src="images/user (2).png" alt="#">
+                            <h2 class="chat-header-right-h2">Название чата</h2>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="chats-chat">
+                        <div class="chat-header-right">
+                            <img class="chat-header-right-img" src="images/user (2).png" alt="#">
+                            <h2 class="chat-header-right-h2">Название чата</h2>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="chats-chat">
+                        <div class="chat-header-right">
+                            <img class="chat-header-right-img" src="images/user (2).png" alt="#">
+                            <h2 class="chat-header-right-h2">Название чата</h2>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="chats-chat">
+                        <div class="chat-header-right">
+                            <img class="chat-header-right-img" src="images/user (2).png" alt="#">
+                            <h2 class="chat-header-right-h2">Название чата</h2>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="chat">
+                <div class="chat-header">
+                    <div class="chat-header-right">
+                        <img class="chat-header-right-img" src="images/logo-of-chat.png" alt="#">
+                        <h2 class="chat-header-right-h2">Название чата</h2>
+                    </div>
+                </div>
+                <div class="chat-middle">
+                    <div class="message1">
+                        <p class="message2">
+                            JOOOOOOOOOOOHN Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio optio possimus molestias atque vitae, eligendi ipsam? Cumque, quidem eum! Minima eum, laudantium quia rerum possimus expedita explicabo facilis non repellendus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, tempora! Est exercitationem repudiandae voluptas numquam nesciunt, consectetur distinctio nam non assumenda nobis, ad sit ullam quo? Nihil id ipsam quod?
+                        </p>
+                    </div>
+                    <div class="message1">
+                        <p class="message2">
+                            JOOOOOOOOOOOHN
+                        </p>
+                    </div>
+                    <div class="message1">
+                        <p class="message2">
+                            JOOOOOOOOOOOHN
+                        </p>
+                    </div>
+                </div>
+                <div class="chat-footer">
+                    <input class="chat-footer-inp" type="text" placeholder="Введите сообщение">
+                    <img class="chat-footer-img" src="https://raw.githubusercontent.com/zenkaster/messenger/Maksim/Maxim/images/send-mes-img.png" alt="#">
+                </div>
+            </div>
+        </div>
     </div>
     <script src="main.js"></script>
 </body>

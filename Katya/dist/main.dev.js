@@ -4,7 +4,6 @@
 // const profilePhoto = document.querySelector(".profile-photo"); 
 // const profileName = document.querySelector(".profile-photo h2"); 
 // const profileEmail = document.querySelector(".profile-photo h4"); 
- 
 // fetch(URL) 
 // .then(response => response.json()) 
 // .then(data => { 
@@ -16,15 +15,11 @@
 //         console.error("Ошибка ", error); 
 // }); 
 // */ 
- 
- 
 // const profileCont = document.querySelector(".profile"); 
- 
 // fetch(URL) 
 // .then(response => response.json()) 
 // .then(data => { 
 //     console.log(data); 
- 
 //     const profileHeader = document.createElement("div"); 
 //     profileHeader.classList.add("profile-header"); 
 //     profileHeader.innerHTML = ` 
@@ -32,7 +27,6 @@
 //         <h2>User info</h2> 
 //         <a href="#">&#128396</a> 
 //     `; 
- 
 //     const profilePhoto = document.createElement("div"); 
 //     profilePhoto.classList.add("profile-photo"); 
 //     profilePhoto.innerHTML = ` 
@@ -40,7 +34,6 @@
 //         <h2>${data.first_name} ${data.last_name}</h2> 
 //         <h4>${data.email}</h4> 
 //     `; 
- 
 //     const profileInfo = document.createElement("ul"); 
 //     profileInfo.classList.add("profile-info"); 
 //     profileInfo.innerHTML = ` 
@@ -66,24 +59,17 @@
 //         </div> 
 //         </li> 
 //     `; 
- 
- 
 //     profileCont.appendChild(profileHeader); 
 //     profileCont.appendChild(profilePhoto); 
 //     profileCont.appendChild(profileInfo); 
 // }) 
 // .catch(error => console.error(error));
-
-
 // web socket
-
 // const socket = new WebSocket(`ws://172.28.0.146:8000/ws`)
-
 // const inp = document.querySelector(`#inp`)
 // const form = document.querySelector(`#form`)
 // socket.addEventListener(`open`, (event) => {
 //     console.log(`Websocket connection estabilished`);
-
 //     form.addEventListener(`submit`, (e) => {
 //         e.preventDefault()
 //         const message = {
@@ -94,15 +80,13 @@
 //         socket.send(JSON.stringify(message))
 //     })
 // })
-
 // socket.addEventListener(`message`, (event) => {
 //     console.log(event.data);
 // })
-
 // socket.addEventListener(`close`, (event) => {
 //     console.log(`WebSocket connection closed`);
 // })
-
 // socket.addEventListener(`error`, (event) => {
 //     console.error(`WebSocket error`,event);
 // })
+"use strict";

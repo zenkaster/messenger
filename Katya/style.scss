@@ -18,7 +18,8 @@ $container-width: 1440px;
     .sign {
         width: 100%;
         height: 100%;
-        background-image: url(../images/fon.png);
+        // background-image: url(../images/fon.png);
+        background-image: linear-gradient(to top, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 100%);
 
         .header {
             width: 100%;
@@ -26,11 +27,17 @@ $container-width: 1440px;
             justify-content: space-between;
             padding: 20px 100px;
             align-items: center;
-            background-color: rgba($color: #ffffff, $alpha: 0.5);
+            box-shadow: 0px 10px 10px #7474b0;
+            background-color: rgba($color: #ffffff, $alpha: 0.3);
 
             &-left {
                 display: flex;
                 gap: 20px;
+
+                h1 {
+                    text-shadow: 5px 5px 20px black;
+                }
+                
                 img {
                     width: 38px;
                     height: 38px;
@@ -39,6 +46,7 @@ $container-width: 1440px;
 
             &-right {
                 display: flex;
+                text-shadow: 5px 5px 20px black;
             }
         }
         .title {
@@ -49,8 +57,9 @@ $container-width: 1440px;
                 @include mixin.width(1440, 500);
                 height: 700px;
                 margin: 50px 0;
-                background-color: rgba($color: #ffffff, $alpha: 0.5);
+                background-color: rgba($color: #ffffff, $alpha: 0.3);
                 border-radius: 20px;
+                box-shadow: 10px 10px 10px #7474b0;
 
             }
         }
@@ -58,18 +67,19 @@ $container-width: 1440px;
 
     .prof-title {
         width: 100%;
-        background-image: url(../images/fon.png);
+        // background-image: url(../images/fon.png);
+        background-image: linear-gradient(to top, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 100%);
         .profile-header {
             width: 100%;
             display: flex;
             justify-content: space-between;
             padding: 20px 100px;
             align-items: center;
-            background-color: rgba($color: #ffffff, $alpha: 0.5);
+            background-color: rgba($color: #ffffff, $alpha: 0.3);
         }
         .profile {
             width: 90%;
-            background-color: rgba($color: #ffffff, $alpha: 0.5);
+            background-color: rgba($color: #ffffff, $alpha: 0.3);
             border-radius: 30px;
             margin: 20px auto;
             display: flex;
@@ -88,6 +98,98 @@ $container-width: 1440px;
                     display: flex;
                 }
             }
+        }
+    }
+
+    &-of-chats {
+        display: flex;
+	    justify-content: space-between;
+        background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+        // background-image: linear-gradient(to top, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 100%);
+        .chats-bottom {
+            width: 25vw;
+            height: 100vh;
+            border-right: 1px solid black;
+        }
+        .chat {
+            width: 75vw;
+            height: 100vh;
+        }
+        .chat-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 66px;
+            background-color: rgb(199, 196, 234);
+        }
+        .chat-header-left-img, .chat-header-right-img {
+            width: 64px;
+        }
+        .chat-header-right {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            gap: 20px;
+        }
+        .chat {
+            position: relative;
+        }
+        .chat-footer {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            width: 98%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .chat-footer-inp {
+            width: 90%;
+            font-size: 22px;
+            padding: 15px;
+            border-radius: 15px;
+            border: 2px solid rgb(199, 196, 234);
+            box-shadow: 4px 4px 50px 10px rgba(34, 60, 80, 0.2);
+            outline: none;
+        }
+        .chat-footer-img {
+            width: 64px;
+            margin-right: 40px;
+            margin-bottom: 5px;
+        }
+        .chat-middle {
+            margin: 15px;
+            height: 75vh; 
+            margin-bottom: 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .message1 {
+            box-shadow: 4px 4px 50px 10px rgba(34, 60, 80, 0.2);
+            border: 2px solid gray;
+            padding: 5px;
+            border-radius: 5px;
+            border-bottom-left-radius: 0;
+            overflow: hidden;
+            max-width: 60%;
+        }
+        .message2 {
+            font-size: 22px;
+        }
+        .chats-top {
+            background-color: rgb(199, 196, 234);
+        }
+        .chats-profile {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            padding: 22.2px;
+        }
+        .line {
+            width: 30px;
+            border: 2px solid white;
         }
     }
 }
