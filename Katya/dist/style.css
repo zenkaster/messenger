@@ -97,6 +97,16 @@
   width: 25vw;
   height: 100vh;
   border-right: 1px solid black;
+  overflow: auto;
+}
+.container-of-chats .chats-bottom::-webkit-scrollbar {
+  width: 7px;
+  background-color: rgba(60, 51, 80, 0);
+}
+.container-of-chats .chats-bottom::-webkit-scrollbar-thumb {
+  background-color: #dcdcdc;
+  width: 7px;
+  border-radius: 5px;
 }
 .container-of-chats .chat {
   width: 75vw;
@@ -152,6 +162,16 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
+  overflow: auto;
+}
+.container-of-chats .chat-middle::-webkit-scrollbar {
+  width: 7px;
+  background-color: rgba(60, 51, 80, 0);
+}
+.container-of-chats .chat-middle::-webkit-scrollbar-thumb {
+  background-color: #dcdcdc;
+  width: 7px;
+  border-radius: 5px;
 }
 .container-of-chats .message1 {
   box-shadow: 4px 4px 50px 10px rgba(34, 60, 80, 0.2);
