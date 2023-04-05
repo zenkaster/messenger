@@ -95,9 +95,10 @@
 }
 .container-of-chats .chats-bottom {
   width: 25vw;
-  height: 100vh;
+  height: 91vh;
   border-right: 1px solid black;
   overflow: auto;
+  overflow-x: hidden;
 }
 .container-of-chats .chats-bottom::-webkit-scrollbar {
   width: 7px;
@@ -177,13 +178,14 @@
   box-shadow: 4px 4px 50px 10px rgba(34, 60, 80, 0.2);
   border: 2px solid gray;
   padding: 5px;
-  border-radius: 5px;
-  border-bottom-left-radius: 0;
+  border-radius: 20px 20px 20px 0;
   overflow: hidden;
   max-width: 60%;
+  background-color: white;
 }
 .container-of-chats .message2 {
   font-size: 22px;
+  color: black;
 }
 .container-of-chats .chats-top {
   background-color: #c7c4ea;
@@ -193,6 +195,7 @@
   flex-direction: column;
   gap: 5px;
   padding: 22.2px;
+  height: 66px;
 }
 .container-of-chats .line {
   width: 30px;
