@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P:regular"
+      rel="stylesheet"
+    />
+    <title>Chat Messenger</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h2 class="title">Step-messenger</h2>
+      <img
+        src="https://www.graphis.com/media/uploads/cache/97/4a/974af49b0de058c468968ba9658baa9c.jpg"
+        alt=""
+        class="logo"
+      />
+      <!-- <div class="container">
+        <button class="btn registration">Регистрация</button>
+        <button class="btn entrance">Вход</button>
+      </div> -->
+      <form class="registration-form">
+        <span class="row-input row-login">
+          <label for="registr-login" class="text-input">Введите логин</label>
+          <input
+            type="text"
+            class="input login"
+            placeholder="login"
+            id="registr-login"
+          />
+          <span class="error-input" id="error-reg-log"></span>
+        </span>
+        <span class="row-input row-password"
+          ><label for="registr-password" class="text-input"
+            >Введите пароль</label
+          >
+          <input
+            type="password"
+            class="input pass"
+            id="registr-password"
+            placeholder="••••••••"
+          />
+          <span class="error-input" id="error-reg-pas"></span>
+        </span>
+        <span class="row-input"
+          ><label for="registr-repeat" class="text-input"
+            >Повторите пароль</label
+          >
+          <input
+            type="password"
+            class="input pass"
+            id="registr-repeat"
+            placeholder="••••••••"
+          />
+          <span class="error-input" id="error-reg-rep"></span>
+        </span>
+        <button class="btn disabled" type="submit" id="registr-send">
+          Зарегистрироваться
+        </button>
+      </form>
+      <div class="already-block">
+        <p class="already-is">Уже есть аккаунт?</p>
+        <a href="#" id="entrance">Войти</a>
+      </div>
+      <form class="entrance-form">
+        <div class="row-input row-login">
+          <label for="entrance-login" class="text-input">Введите логин</label>
+          <input
+            type="text"
+            class="input login"
+            placeholder="Login"
+            id="entrance-login"
+          />
+          <span class="error-input" id="error-entr-log"></span>
+        </div>
+        <div class="row-input">
+          <label for="entrance-password" class="text-input"
+            >Введите пароль</label
+          >
+          <input
+            type="password"
+            class="input password"
+            placeholder="••••••••"
+            id="entrance-password"
+          />
+          <span class="error-input" id="error-entr-pas"></span>
+        </div>
+        <div id="entrance-error"></div>
+        <button class="btn" id="entr-send" type="submit">Войти</button>
+      </form>
+      <h2 class="registred-title">Вы успешно зарегистрировались!</h2>
+      <h2 class="entr-title"></h2>
+    </div>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
