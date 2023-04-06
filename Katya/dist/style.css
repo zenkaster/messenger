@@ -89,6 +89,7 @@
   display: flex;
 }
 .container-of-chats {
+  position: relative;
   display: flex;
   justify-content: space-between;
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
@@ -202,9 +203,10 @@
   padding: 10px;
   width: 396px;
   border-radius: 20px;
-  background-image: url(images/search.png);
+  background-image: url(../images/search.png);
   background-repeat: no-repeat;
-  background-size: 20px 20px;
+  background-size: cover;
+  background-position: center center;
 }
 .container-of-chats .chats-profile {
   display: flex;
@@ -215,10 +217,13 @@
 }
 .container-of-chats .active-chats-profile {
   display: none;
+  position: absolute;
   width: 260px;
   border-radius: 15px;
-  box-shadow: 10px 10px 10px #4b5663;
-  background-color: rgba(173, 168, 218, 0.798);
+  box-shadow: 10px 10px 10px #23282e;
+  background-color: #ada8da;
+  top: 68px;
+  left: 1px;
 }
 .container-of-chats .active-chats-profile ul {
   width: 100%;
@@ -229,9 +234,17 @@
 .container-of-chats .active-chats-profile li {
   display: flex;
   padding: 15px;
+  gap: 20px;
+  font-size: 20px;
+}
+.container-of-chats .active-chats-profile li:hover {
+  background-color: #747098;
 }
 .container-of-chats .active-chats-profile img {
   width: 20px;
+}
+.container-of-chats .active-toggle {
+  display: flex;
 }
 .container-of-chats .line {
   width: 30px;

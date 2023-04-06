@@ -102,6 +102,7 @@ $container-width: 1440px;
     }
 
     &-of-chats {
+        position: relative;
         display: flex;
 	    justify-content: space-between;
         background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
@@ -219,9 +220,11 @@ $container-width: 1440px;
                 padding: 10px;
                 width: 396px;
                 border-radius: 20px;
-                background-image: url(images/search.png);
+                background-image: url(../images/search.png);
                 background-repeat: no-repeat;
-                background-size: 20px 20px;
+                background-size: cover;
+                background-position: center center;
+                // background-size: 20px 20px;
             }
         }
         .chats-profile {
@@ -231,12 +234,16 @@ $container-width: 1440px;
             padding: 22.2px;
             height: 66px;
         }
+        
         .active-chats-profile {
             display: none;
+            position: absolute;
             width: 260px;
             border-radius: 15px;
-            box-shadow: 10px 10px 10px #4b5663;
-            background-color: rgba(173, 168, 218, 0.798);
+            box-shadow: 10px 10px 10px #23282e;
+            background-color: rgb(173, 168, 218);
+            top: 68px;
+            left: 1px;
             ul {
                 width: 100%;
             }
@@ -246,12 +253,20 @@ $container-width: 1440px;
             li {
                 display: flex;
                 padding: 15px;
+                gap: 20px;
+                font-size: 20px;
+            }
+            li:hover {
+                background-color: rgb(116, 112, 152);
             }
             img {
                 width: 20px;
             }
-
         }
+        .active-toggle {
+            display: flex;
+        }
+        
         .line {
             width: 30px;
             border: 2px solid white;
