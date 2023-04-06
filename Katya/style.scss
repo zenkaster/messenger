@@ -218,14 +218,40 @@ $container-width: 1440px;
             input {
                 background-color: rgb(116, 112, 152);
                 padding: 10px;
+                padding-left: 30px;
                 width: 396px;
                 border-radius: 20px;
                 background-image: url(../images/search.png);
                 background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center center;
+                background-size: 20px 20px;
+                background-position: 5px;
+                font-size: 20px;
+                border: 2px solid rgb(79, 76, 105);
                 // background-size: 20px 20px;
             }
+        }
+
+        .active-chats-search {
+            display: none;
+            position: absolute;
+            width: 467px;
+            border-radius: 15px;
+            box-shadow: 10px 10px 10px #23282e;
+            background-color: rgb(173, 168, 218);
+            top: 68px;
+            left: 1px;
+            flex-direction: column;
+            padding: 15px;
+            gap: 10px;
+        }
+
+        .chat-search {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .chat-search:hover {
+            background-color: rgb(116, 112, 152);
         }
         .chats-profile {
             display: flex;
@@ -260,7 +286,7 @@ $container-width: 1440px;
                 background-color: rgb(116, 112, 152);
             }
             img {
-                width: 20px;
+                width: 24px;
             }
         }
         .active-toggle {

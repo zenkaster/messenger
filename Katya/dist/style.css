@@ -201,12 +201,36 @@
 .container-of-chats .chats-search input {
   background-color: #747098;
   padding: 10px;
+  padding-left: 30px;
   width: 396px;
   border-radius: 20px;
   background-image: url(../images/search.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  background-size: 20px 20px;
+  background-position: 5px;
+  font-size: 20px;
+  border: 2px solid #4f4c69;
+}
+.container-of-chats .active-chats-search {
+  display: none;
+  position: absolute;
+  width: 467px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px #23282e;
+  background-color: #ada8da;
+  top: 68px;
+  left: 1px;
+  flex-direction: column;
+  padding: 15px;
+  gap: 10px;
+}
+.container-of-chats .chat-search {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.container-of-chats .chat-search:hover {
+  background-color: #747098;
 }
 .container-of-chats .chats-profile {
   display: flex;
@@ -241,7 +265,7 @@
   background-color: #747098;
 }
 .container-of-chats .active-chats-profile img {
-  width: 20px;
+  width: 24px;
 }
 .container-of-chats .active-toggle {
   display: flex;

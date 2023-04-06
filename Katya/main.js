@@ -8,6 +8,13 @@ burger.addEventListener(`click`, (e) => {
     // burgerActive.style.display = `flex`
 })
 
+const inpSearch = document.querySelector(`#inp-search`)
+const searchActive = document.querySelector(`.active-chats-search`)
+
+inpSearch.addEventListener(`click`, (e) => {
+    e.preventDefault()
+    searchActive.classList.toggle(`active-toggle`)
+})
 
 
 // web socket
