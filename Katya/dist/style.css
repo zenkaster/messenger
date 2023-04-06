@@ -118,7 +118,7 @@
   justify-content: center;
   align-items: center;
   height: 66px;
-  background-color: #c7c4ea;
+  background-color: #928dc0;
 }
 .container-of-chats .chat-header-left-img, .container-of-chats .chat-header-right-img {
   width: 64px;
@@ -193,7 +193,18 @@
   color: black;
 }
 .container-of-chats .chats-top {
-  background-color: #c7c4ea;
+  background-color: #928dc0;
+  display: flex;
+  align-items: center;
+}
+.container-of-chats .chats-search input {
+  background-color: #747098;
+  padding: 10px;
+  width: 396px;
+  border-radius: 20px;
+  background-image: url(images/search.png);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
 }
 .container-of-chats .chats-profile {
   display: flex;
@@ -201,6 +212,26 @@
   gap: 5px;
   padding: 22.2px;
   height: 66px;
+}
+.container-of-chats .active-chats-profile {
+  display: none;
+  width: 260px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px #4b5663;
+  background-color: rgba(173, 168, 218, 0.798);
+}
+.container-of-chats .active-chats-profile ul {
+  width: 100%;
+}
+.container-of-chats .active-chats-profile hr {
+  width: 100%;
+}
+.container-of-chats .active-chats-profile li {
+  display: flex;
+  padding: 15px;
+}
+.container-of-chats .active-chats-profile img {
+  width: 20px;
 }
 .container-of-chats .line {
   width: 30px;

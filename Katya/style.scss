@@ -132,7 +132,8 @@ $container-width: 1440px;
             justify-content: center;
             align-items: center;
             height: 66px;
-            background-color: rgb(199, 196, 234);
+            background-color: rgb(146, 141, 192);
+
         }
         .chat-header-left-img, .chat-header-right-img {
             width: 64px;
@@ -208,7 +209,20 @@ $container-width: 1440px;
             color: black;
         }
         .chats-top {
-            background-color: rgb(199, 196, 234);
+            background-color: rgb(146, 141, 192);
+            display: flex;
+            align-items: center;
+        }
+        .chats-search {
+            input {
+                background-color: rgb(116, 112, 152);
+                padding: 10px;
+                width: 396px;
+                border-radius: 20px;
+                background-image: url(images/search.png);
+                background-repeat: no-repeat;
+                background-size: 20px 20px;
+            }
         }
         .chats-profile {
             display: flex;
@@ -216,6 +230,27 @@ $container-width: 1440px;
             gap: 5px;
             padding: 22.2px;
             height: 66px;
+        }
+        .active-chats-profile {
+            display: none;
+            width: 260px;
+            border-radius: 15px;
+            box-shadow: 10px 10px 10px #4b5663;
+            background-color: rgba(173, 168, 218, 0.798);
+            ul {
+                width: 100%;
+            }
+            hr {
+                width: 100%;
+            }
+            li {
+                display: flex;
+                padding: 15px;
+            }
+            img {
+                width: 20px;
+            }
+
         }
         .line {
             width: 30px;
