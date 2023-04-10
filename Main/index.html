@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <title>Step Messenger KTAMK</title>
+  </head>
+  <body>
+    <!-- <form id="form">
+        <input type="text" name="" id="inp">
+        <input type="submit" value="odfsjfjd">
+    </form> -->
+    <div class="container">
+      <section class="sign">
+        <div class="title">
+          <div class="title-forms">
+            <div class="form-wrapper">
+              <h2 class="title">Step-messenger</h2>
+              <img src="images/form-logo.png" alt="" class="logo" />
+              <form class="registration-form">
+                <span class="row-input row-login">
+                  <label for="registr-mail" class="text-input"
+                    >Введите email</label
+                  >
+                  <input
+                    type="mail"
+                    class="input mail"
+                    placeholder="@gmail.com"
+                    id="registr-mail"
+                  />
+                  <span class="error-input" id="error-reg-mail"></span>
+                </span>
+                <span class="row-input row-login">
+                  <label for="registr-login" class="text-input"
+                    >Введите никнейм</label
+                  >
+                  <input
+                    type="text"
+                    class="input login"
+                    placeholder="Nickname"
+                    id="registr-login"
+                  />
+                  <span class="error-input" id="error-reg-log"></span>
+                </span>
+                <span class="row-input row-password"
+                  ><label for="registr-password" class="text-input"
+                    >Введите пароль</label
+                  >
+                  <input
+                    type="password"
+                    class="input pass"
+                    id="registr-password"
+                    placeholder="••••••••"
+                  />
+                  <span class="error-input" id="error-reg-pas"></span>
+                </span>
+                <span class="row-input"
+                  ><label for="registr-repeat" class="text-input"
+                    >Повторите пароль</label
+                  >
+                  <input
+                    type="password"
+                    class="input pass"
+                    id="registr-repeat"
+                    placeholder="••••••••"
+                  />
+                  <span class="error-input" id="error-reg-rep"></span>
+                </span>
+                <button class="btn disabled" type="submit" id="registr-send">
+                  Зарегистрироваться
+                </button>
+              </form>
+              <div class="already-block">
+                <p class="already-is">Уже есть аккаунт?</p>
+                <a href="#" id="entrance">Войти</a>
+              </div>
+              <form class="entrance-form">
+                <div class="row-input row-login">
+                  <label for="entrance-login" class="text-input"
+                    >Введите логин</label
+                  >
+                  <input
+                    type="text"
+                    class="input login"
+                    placeholder="Login"
+                    id="entrance-login"
+                  />
+                  <span class="error-input" id="error-entr-log"></span>
+                </div>
+                <div class="row-input">
+                  <label for="entrance-password" class="text-input"
+                    >Введите пароль</label
+                  >
+                  <input
+                    type="password"
+                    class="input password"
+                    placeholder="••••••••"
+                    id="entrance-password"
+                  />
+                  <span class="error-input" id="error-entr-pas"></span>
+                </div>
+                <div id="entrance-error"></div>
+                <button class="btn" id="entr-send" type="submit">Войти</button>
+              </form>
+              <h2 class="registred-title">Вы успешно зарегистрировались!</h2>
+              <h2 class="entr-title"></h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="prof-title">
+            <div class="profile-header">
+                <h2><a href="#">&#171 Chats</a></h2>
+                <h2>User info</h2>
+                <h2><a href="#">&#128396 Edit profile</a></h2>
+            </div>
+            <div class="profile">
+        
+                <div class="profile-photo">
+                    <img src="https://okeygeek.ru/wp-content/uploads/2016/07/images.png" alt="userAvatar">  
+                    <h2>имя</h2>
+                    <h4>email</h4>
+                </div>
+        
+                <ul class="profile-info">
+                    <li>
+                        <img src="images/phone-call.png" alt="icon">
+                        <div class="profile-info-phone">
+                            <h3>Телефон: </h3>
+                        </div>       
+                    </li>
+                    <li>
+                        <img src="images/user.png" alt="icon">
+                        <div class="profile-info-username">
+                            <h3>Имя: </h3>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/notification.png" alt="icon">
+                        <div class="profile-info-notifications">
+                            <h3>Notifications</h3>
+                            <input type="checkbox" name="notifications" id="notifications">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section> -->
+
+      <div class="container-of-chats">
+        <div class="chats">
+          <div class="chats-top">
+            <div class="chats-profile">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+            <div class="active-chats-profile">
+              <ul>
+                <li class="active-chats-profile-li" id="my-prof">
+                  <img src="images/user (3).png" alt="" />
+                  <p>Мой профиль</p>
+                </li>
+                <hr />
+                <li class="active-chats-profile-li">
+                  <img src="images/brightness-and-contrast.png" alt="" />
+                  <p>Тема</p>
+                </li>
+                <hr />
+                <li class="active-chats-profile-li">
+                  <img src="images/setting.png" alt="" />
+                  <p>Настройки</p>
+                </li>
+                <hr />
+                <li class="active-chats-profile-li">
+                  <img src="images/exit.png" alt="" />
+                  <p>Выйти</p>
+                </li>
+              </ul>
+            </div>
+            <div class="active-chats-search">
+              <li class="chat-search">
+                <img
+                  class="chat-header-right-img"
+                  src="images/user (2).png"
+                  alt="#"
+                />
+                <h2 class="chat-header-right-h2">Имя пользователя</h2>
+              </li>
+              <li class="chat-search">
+                <img
+                  class="chat-header-right-img"
+                  src="images/user (2).png"
+                  alt="#"
+                />
+                <h2 class="chat-header-right-h2">Имя пользователя</h2>
+              </li>
+              <li class="chat-search">
+                <img
+                  class="chat-header-right-img"
+                  src="images/user (2).png"
+                  alt="#"
+                />
+                <h2 class="chat-header-right-h2">Имя пользователя</h2>
+              </li>
+            </div>
+            <div class="chats-search">
+              <input type="search" name="" id="inp-search" />
+            </div>
+          </div>
+          <div class="chats-bottom">
+            <div class="chats-chat">
+              <div class="chat-header-right">
+                <img
+                  class="chat-header-right-img"
+                  src="images/user (2).png"
+                  alt="#"
+                />
+                <h2 class="chat-header-right-h2">Название чата</h2>
+              </div>
+            </div>
+            <hr />
+            <div class="chats-chat">
+              <div class="chat-header-right">
+                <img
+                  class="chat-header-right-img"
+                  src="images/user (2).png"
+                  alt="#"
+                />
+                <h2 class="chat-header-right-h2">Название чата</h2>
+              </div>
+            </div>
+            <hr />
+            <div class="chats-chat">
+              <div class="chat-header-right">
+                <img
+                  class="chat-header-right-img"
+                  src="images/user (2).png"
+                  alt="#"
+                />
+                <h2 class="chat-header-right-h2">Название чата</h2>
+              </div>
+            </div>
+            <hr />
+            <div class="chats-chat">
+              <div class="chat-header-right">
+                <img
+                  class="chat-header-right-img"
+                  src="images/user (2).png"
+                  alt="#"
+                />
+                <h2 class="chat-header-right-h2">Название чата</h2>
+              </div>
+            </div>
+            <hr />
+            <div class="chats-chat">
+              <div class="chat-header-right">
+                <img
+                  class="chat-header-right-img"
+                  src="images/user (2).png"
+                  alt="#"
+                />
+                <h2 class="chat-header-right-h2">Название чата</h2>
+              </div>
+            </div>
+            <hr />
+            <div class="chats-chat">
+              <div class="chat-header-right">
+                <img
+                  class="chat-header-right-img"
+                  src="images/user (2).png"
+                  alt="#"
+                />
+                <h2 class="chat-header-right-h2">Название чата</h2>
+              </div>
+            </div>
+            <hr />
+            <div class="chats-chat">
+              <div class="chat-header-right">
+                <img
+                  class="chat-header-right-img"
+                  src="images/user (2).png"
+                  alt="#"
+                />
+                <h2 class="chat-header-right-h2">Название чата</h2>
+              </div>
+            </div>
+            <hr />
+            <div class="chats-chat">
+              <div class="chat-header-right">
+                <img
+                  class="chat-header-right-img"
+                  src="images/user (2).png"
+                  alt="#"
+                />
+                <h2 class="chat-header-right-h2">Название чата</h2>
+              </div>
+            </div>
+            <hr />
+            <div class="chats-chat">
+              <div class="chat-header-right">
+                <img
+                  class="chat-header-right-img"
+                  src="images/user (2).png"
+                  alt="#"
+                />
+                <h2 class="chat-header-right-h2">Название чата</h2>
+              </div>
+            </div>
+            <hr />
+            <div class="chats-chat">
+              <div class="chat-header-right">
+                <img
+                  class="chat-header-right-img"
+                  src="images/user (2).png"
+                  alt="#"
+                />
+                <h2 class="chat-header-right-h2">Название чата</h2>
+              </div>
+            </div>
+            <hr />
+            <div class="chats-chat">
+              <div class="chat-header-right">
+                <img
+                  class="chat-header-right-img"
+                  src="images/user (2).png"
+                  alt="#"
+                />
+                <h2 class="chat-header-right-h2">Название чата</h2>
+              </div>
+            </div>
+            <hr />
+            <div class="chats-chat">
+              <div class="chat-header-right">
+                <img
+                  class="chat-header-right-img"
+                  src="images/user (2).png"
+                  alt="#"
+                />
+                <h2 class="chat-header-right-h2">Название чата</h2>
+              </div>
+            </div>
+            <hr />
+            <div class="chats-chat">
+              <div class="chat-header-right">
+                <img
+                  class="chat-header-right-img"
+                  src="images/user (2).png"
+                  alt="#"
+                />
+                <h2 class="chat-header-right-h2">Название чата</h2>
+              </div>
+            </div>
+            <hr />
+            <div class="chats-chat">
+              <div class="chat-header-right">
+                <img
+                  class="chat-header-right-img"
+                  src="images/user (2).png"
+                  alt="#"
+                />
+                <h2 class="chat-header-right-h2">Название чата</h2>
+              </div>
+            </div>
+            <hr />
+            <div class="chats-chat">
+              <div class="chat-header-right">
+                <img
+                  class="chat-header-right-img"
+                  src="images/user (2).png"
+                  alt="#"
+                />
+                <h2 class="chat-header-right-h2">Название чата</h2>
+              </div>
+            </div>
+            <hr />
+          </div>
+        </div>
+        <div class="chat">
+          <div class="chat-header">
+            <div class="chat-header-right">
+              <img
+                class="chat-header-right-img"
+                src="images/user (2).png"
+                alt="#"
+              />
+              <h2 class="chat-header-right-h2">Название чата</h2>
+            </div>
+          </div>
+          <div class="chat-middle">
+            <div class="message1">
+              <p class="message2">
+                JOOOOOOOOOOOHN Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Odio optio possimus molestias atque vitae,
+                eligendi ipsam? Cumque, quidem eum! Minima eum, laudantium quia
+                rerum possimus expedita explicabo facilis non repellendus. Lorem
+                ipsum dolor, sit amet consectetur adipisicing elit. Numquam,
+                tempora! Est exercitationem repudiandae voluptas numquam
+                nesciunt, consectetur distinctio nam non assumenda nobis, ad sit
+                ullam quo? Nihil id ipsam quod?
+              </p>
+            </div>
+            <div class="message1">
+              <p class="message2">JOOOOOOOOOOOHN</p>
+            </div>
+            <div class="message1">
+              <p class="message2">JOOOOOOOOOOOHN acho</p>
+            </div>
+          </div>
+          <div class="chat-footer">
+            <input
+              class="chat-footer-inp"
+              type="text"
+              placeholder="Введите сообщение"
+            />
+            <img
+              class="chat-footer-img"
+              src="https://raw.githubusercontent.com/zenkaster/messenger/Maksim/Maxim/images/send-mes-img.png"
+              alt="#"
+            />
+          </div>
+        </div>
+        <div class="profile-window-back"></div>
+        <div class="profile-window">
+          <div class="cont-prof">
+            <div class="cont-prof1">
+              <div class="cont-prof-left">
+                <img src="images/user (2).png" alt="#" />
+              </div>
+              <div class="cont-prof-right"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="autorization.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

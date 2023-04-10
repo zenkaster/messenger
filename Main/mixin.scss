@@ -1,0 +1,3 @@
+@mixin width($container, $block) {
+    width: $block * 100% / $container;
+}

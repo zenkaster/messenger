@@ -12,7 +12,7 @@ body {
   height: 100vh;
   background-color: #c7c4ea;
 }
-.wrapper {
+.form-wrapper {
   -webkit-box-shadow: 2px 0px 22px 12px rgba(34, 60, 80, 0.29);
   -moz-box-shadow: 2px 0px 22px 12px rgba(34, 60, 80, 0.29);
   box-shadow: 2px 0px 22px 12px rgba(34, 60, 80, 0.29);

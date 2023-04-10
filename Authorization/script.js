@@ -36,6 +36,7 @@ const regErrRep = document.querySelector("#error-reg-rep");
 let regLogValue = 0;
 let regPassValue = 0;
 let regRepValue = 0;
+
 /////////////////////
 
 const registredTitle = document.querySelector(".registred-title");
@@ -67,7 +68,7 @@ const createUser = async (login, password) => {
   }
 };
 
-///z5
+///
 
 const loginUser = async () => {
   const data = await fetch(url + endLogin, {
@@ -179,7 +180,7 @@ regRepeat.addEventListener("blur", () => {
     regRepValue = 0;
     regErrRep.style.fontSize = "14px";
     regErrRep.style.color = "red";
-    regRepeat.style.borderBottom   = "2px solid red";
+    regRepeat.style.borderBottom = "2px solid red";
     regErrRep.textContent = "Кол-во символов: от 5 до 15";
   }
   if (regLogValue == 1 && regPassValue == 1 && regRepValue == 1) {
@@ -197,7 +198,7 @@ registrSend.addEventListener("click", async (e) => {
     const res = await createUser(regLogin.value, regPass.value);
     if (res.detail) {
       regErrLog.style.color = "red";
-      regLogin.style.border = "2px solid red";
+      regLogin.style.borderBottom = "2px solid red";
       regErrLog.style.fontSize = "14px";
       regErrLog.textContent = "Такой логин уже есть";
     } else {
@@ -224,8 +225,8 @@ entrBtn.addEventListener("click", async (e) => {
   const guest = entrLogin.value;
   const token = await loginUser();
   if (token == "Incorrect username or password") {
-    entrLogin.style.border = "2px solid red";
-    entrPass.style.border = "2px solid red";
+    entrLogin.style.borderBottom = "2px solid red";
+    entrPass.style.borderBottom = "2px solid red";
     entrError.textContent = "Неправильный логин или пароль";
     entrError.style.display = "block";
   } else {
