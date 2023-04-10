@@ -1,5 +1,7 @@
 @use "mixin.scss";
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,11 +9,7 @@
     font-family: "Roboto", sans-serif;
     text-decoration: none;
     list-style-type: none;
-    color: white;
-}
-
-input {
-    color: black;
+    color: blacks;
 }
 
 $container-width: 1440px;
@@ -23,8 +21,7 @@ $container-width: 1440px;
     .sign {
         width: 100%;
         height: 100vh;
-        // background-image: url(../images/fon.png);
-        background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+        background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
     
         .header {
           width: 100%;
@@ -33,7 +30,7 @@ $container-width: 1440px;
           padding: 20px 100px;
           align-items: center;
           box-shadow: 0px 10px 10px #7474b0;
-          background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+          background-color: rgba($color: #ffffff, $alpha: 0.3);
     
           &-left {
             display: flex;
@@ -59,11 +56,6 @@ $container-width: 1440px;
           display: flex;
           justify-content: center;
           &-forms {
-            // @include mixin.width(1440, 500);
-            // margin: 50px 0;
-            // background-color: rgba($color: #ffffff, $alpha: 0.3);
-            // border-radius: 20px;
-            // box-shadow: 10px 10px 10px #7474b0;
             .form-wrapper {
               -webkit-box-shadow: 2px 0px 22px 12px rgba(34, 60, 80, 0.29);
               -moz-box-shadow: 2px 0px 22px 12px rgba(34, 60, 80, 0.29);
@@ -77,10 +69,13 @@ $container-width: 1440px;
               flex-direction: column;
               gap: 30px;
               width: 50vw;
-              background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+              background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
     
+              * {
+                color: black;
+              }
               .title {
-                // color: black;
+                color: black;
                 font-size: 40px;
                 text-transform: uppercase;
                 font-weight: 800;
@@ -109,7 +104,7 @@ $container-width: 1440px;
                   sans-serif;
                 font-size: 25px;
                 cursor: pointer;
-                background-color: #4f4c69;
+                background-color: rgb(220, 220, 220);
                 padding: 10px 15px;
               }
               .btn:hover {
@@ -164,7 +159,7 @@ $container-width: 1440px;
                 align-items: center;
                 #entrance {
                   font-size: 20px;
-                  color: rgb(255, 255, 255);
+                  color: rgb(0, 0, 0);
                   text-decoration: none;
                   transition: 0.3s;
                 }
@@ -190,8 +185,7 @@ $container-width: 1440px;
         position: relative;
         display: flex;
         justify-content: space-between;
-        background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-        // background-image: linear-gradient(to top, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 100%);
+        background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
         .chats {
             width: 100%;
             height: 91vh;
@@ -234,65 +228,7 @@ $container-width: 1440px;
                 width: 64px;
             }
         }
-        // .chat-header-left-img {
-        //     width: 64px;
-        // }
-        // .chat-footer {
-        //     position: absolute;
-        //     bottom: 10px;
-        //     left: 10px;
-        //     width: 98%;
-        //     display: flex;
-        //     justify-content: space-between;
-        //     align-items: center;
-        // }
-        // .chat-footer-inp {
-        //     width: 90%;
-        //     font-size: 22px;
-        //     padding: 15px;
-        //     border-radius: 15px;
-        //     border: 2px solid rgb(199, 196, 234);
-        //     box-shadow: 4px 4px 50px 10px rgba(34, 60, 80, 0.2);
-        //     outline: none;
-        // }
-        // .chat-footer-img {
-        //     width: 64px;
-        //     margin-right: 40px;
-        //     margin-bottom: 5px;
-        // }
-        // .chat-middle {
-        //     margin: 15px;
-        //     height: 75vh;
-        //     margin-bottom: 80px;
-        //     display: flex;
-        //     flex-direction: column;
-        //     align-items: flex-start;
-        //     gap: 10px;
-        //     overflow: auto;
-        // }
-
-        // .chat-middle::-webkit-scrollbar {
-        //     width: 7px;
-        //     background-color: rgba($color: #3c3350, $alpha: 0);
-        // }
-        // .chat-middle::-webkit-scrollbar-thumb {
-        //     background-color: #dcdcdc;
-        //     width: 7px;
-        //     border-radius: 5px;
-        // }
-        // .message1 {
-        //     box-shadow: 4px 4px 50px 10px rgba(34, 60, 80, 0.2);
-        //     border: 2px solid gray;
-        //     padding: 5px;
-        //     border-radius: 20px 20px 20px 0;
-        //     overflow: hidden;
-        //     max-width: 60%;
-        //     background-color: white;
-        // }
-        // .message2 {
-        //     font-size: 22px;
-        //     color: black;
-        // }
+        
         .chats-header {
             background-color: rgb(146, 141, 192);
             display: flex;
@@ -375,8 +311,6 @@ $container-width: 1440px;
             img {
                 width: 24px;
             }
-
-            
         }
         
         .line {
@@ -388,6 +322,7 @@ $container-width: 1440px;
 .hide {
     display: none !important;
 }
+
 // #side-checkbox {
 //     display: none;
 // }
