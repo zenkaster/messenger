@@ -5,6 +5,10 @@ const endLogin = "/users/login";
 const endSendMess = "/send_message";
 
 /////////////////////
+const formWrap = document.querySelector(".form-wrapper");
+const title = document.querySelector("#form-title");
+const logo = document.querySelector("#form-logo");
+////
 
 const entrLink = document.querySelector("#entrance");
 const registrSend = document.querySelector("#registr-send");
@@ -198,10 +202,9 @@ regPass.addEventListener("blur", () => {
     if (regRepeat.value.length >= 5) {
       if (regRepeat.value === regPass.value) {
         regErrRep.textContent = "Пароли совпадают ✓";
-        regErrRep.classList.add("error-true");
         regRepValue = 1;
+        regErrRep.classList.add("error-true");
         regRepeat.style.borderBottom = "2px solid green";
-
         regErrRep.style.fontSize = "16px";
       } else {
         regErrRep.classList.remove("error-true");
@@ -234,6 +237,7 @@ regRepeat.addEventListener("blur", () => {
       if (regRepeat.value == regPass.value) {
         regErrRep.classList.add("error-true");
         regRepeat.style.borderBottom = "2px solid green";
+        regErrRep.style.fontSize = "16px";
 
         regErrRep.textContent = "Пароли совпадают ✓";
         regRepValue = 1;
@@ -281,11 +285,20 @@ registrSend.addEventListener("click", async (e) => {
   }
 });
 
-entrLink.addEventListener("click", () => {
-  registrForm.style.display = "none";
-  already.style.display = "none";
-  entrForm.style.display = "flex";
-});
+const entrFormOpening = () => {
+  formWrap.style.transform = "rotateY(180deg)";
+
+  setTimeout(() => {
+    registrForm.style.display = "none";
+    already.style.display = "none";
+    entrForm.style.display = "flex";
+    title.style.transform = "rotateY(180deg)";
+    logo.style.transform = "rotateY(180deg)";
+  }, 500);
+};
+
+entrLink.addEventListener("click", entrFormOpening);
+
 entrBtn.addEventListener("click", async (e) => {
   e.preventDefault();
   const guest = entrLogin.value;
