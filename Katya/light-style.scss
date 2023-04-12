@@ -9,10 +9,10 @@
     font-family: "Roboto", sans-serif;
     text-decoration: none;
     list-style-type: none;
-    color: blacks;
+    color: black;
 }
 
-$container-width: 1440px;
+$container-width: 99vw;
 
 .container {
     width: $container-width;
@@ -141,7 +141,6 @@ $container-width: 1440px;
                 #entr-send {
                   margin-top: 20px;
                   padding: 10px 20px;
-                  background-color: rgb(127, 255, 127);
                   margin-bottom: 10px;
                 }
                 #registr-send {
@@ -203,16 +202,17 @@ $container-width: 1440px;
             width: 7px;
             border-radius: 5px;
         }
-        .all-chat {
-            width: 75vw;
+        .all-chats {
+            width: 488px;
             height: 100vh;
+            background-color: white;
         }
         .chat-header {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 66px;
-            background-color: rgb(146, 141, 192);
+            background-color: white;
         }
         .chat {
             display: flex;
@@ -230,13 +230,17 @@ $container-width: 1440px;
         }
         
         .chats-header {
-            background-color: rgb(146, 141, 192);
+            // background-color: #4f4c69;
+            background-color: white;
+
             display: flex;
             align-items: center;
         }
         .chats-search {
             input {
-                background-color: rgb(116, 112, 152);
+                // background-color: #3c3a50;
+                 background-color: white;
+
                 padding: 10px;
                 padding-left: 30px;
                 width: 396px;
@@ -257,7 +261,8 @@ $container-width: 1440px;
             width: 467px;
             border-radius: 15px;
             box-shadow: 10px 10px 10px #23282e;
-            background-color: rgb(173, 168, 218);
+            // background-color: rgb(173, 168, 218);
+            background-color: white;
             top: 68px;
             left: 1px;
             flex-direction: column;
@@ -290,7 +295,8 @@ $container-width: 1440px;
             width: 260px;
             border-radius: 15px;
             box-shadow: 10px 10px 10px #23282e;
-            background-color: rgb(173, 168, 218);
+            // background-color: rgb(173, 168, 218);
+            background-color: white;
             top: 68px;
             left: 1px;
             ul {
@@ -306,7 +312,14 @@ $container-width: 1440px;
                 font-size: 20px;
             }
             li:hover {
-                background-color: rgb(116, 112, 152);
+                background-color: rgb(142, 139, 170);
+            }
+            .dark-side {
+              justify-content: space-between;
+            }
+            label {
+              display: flex;
+              gap: 20px;
             }
             img {
                 width: 24px;
@@ -315,7 +328,7 @@ $container-width: 1440px;
         
         .line {
             width: 30px;
-            border: 2px solid white;
+            border: 2px solid rgb(0, 0, 0);
         }
     }
 }

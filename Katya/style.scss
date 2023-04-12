@@ -14,7 +14,8 @@ input {
     color: black;
 }
 
-$container-width: 1440px;
+$container-width: 99vw;
+$chats-header-color: #212121;
 
 .container {
     width: $container-width;
@@ -64,12 +65,16 @@ $container-width: 1440px;
             // background-color: rgba($color: #ffffff, $alpha: 0.3);
             // border-radius: 20px;
             // box-shadow: 10px 10px 10px #7474b0;
+            height: 100vh;
+            align-items: center;
+            display: flex;
+            justify-content: center;
             .form-wrapper {
               -webkit-box-shadow: 2px 0px 22px 12px rgba(34, 60, 80, 0.29);
               -moz-box-shadow: 2px 0px 22px 12px rgba(34, 60, 80, 0.29);
               box-shadow: 2px 0px 22px 12px rgba(34, 60, 80, 0.29);
-              margin-top: 50px;
               border-radius: 30px;
+              margin-bottom: 50px;
               padding: 30px;
               display: flex;
               align-items: center;
@@ -77,6 +82,7 @@ $container-width: 1440px;
               flex-direction: column;
               gap: 30px;
               width: 50vw;
+              transition: ease-in-out 1.1s;
               background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     
               .title {
@@ -119,15 +125,22 @@ $container-width: 1440px;
                 width: 100%;
                 display: flex;
                 align-items: center;
+                justify-content: space-around;
                 gap: 20px;
+                .error-input {
+                  color: red;
+                  font-size: 16px;
+                  width: 22%;
+                  text-align: center;
+                }
+                .error-true {
+                  font-size: 30px;
+                  color: green;
+                }
               }
               .text-input {
                 width: 25%;
                 font-size: 20px;
-              }
-              .error-input {
-                color: red;
-                width: 20%;
               }
               form {
                 display: flex;
@@ -146,7 +159,6 @@ $container-width: 1440px;
                 #entr-send {
                   margin-top: 20px;
                   padding: 10px 20px;
-                  background-color: rgb(127, 255, 127);
                   margin-bottom: 10px;
                 }
                 #registr-send {
@@ -154,6 +166,7 @@ $container-width: 1440px;
                 }
               }
               .entrance-form {
+                transform: rotateY(180deg);
                 display: none;
               }
     
@@ -174,6 +187,7 @@ $container-width: 1440px;
               }
               .entr-title {
                 display: none;
+                  transform: rotateY(180deg);
                 font-size: 40px;
               }
               .registred-title {
@@ -187,6 +201,7 @@ $container-width: 1440px;
       }
 
     &-of-chats {
+      color: black;
         position: relative;
         display: flex;
         justify-content: space-between;
@@ -209,16 +224,18 @@ $container-width: 1440px;
             width: 7px;
             border-radius: 5px;
         }
-        .all-chat {
-            width: 75vw;
-            height: 100vh;
-        }
+        .all-chats {
+          width: 488px;
+          height: 100vh;
+          background-color: $chats-header-color;
+      }
         .chat-header {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 66px;
-            background-color: rgb(146, 141, 192);
+            // background-color: rgb(146, 141, 192);
+            background-color: $chats-header-color;
         }
         .chat {
             display: flex;
@@ -285,7 +302,7 @@ $container-width: 1440px;
         //     border: 2px solid gray;
         //     padding: 5px;
         //     border-radius: 20px 20px 20px 0;
-        //     overflow: hidden;
+   
         //     max-width: 60%;
         //     background-color: white;
         // }
@@ -294,13 +311,15 @@ $container-width: 1440px;
         //     color: black;
         // }
         .chats-header {
-            background-color: rgb(146, 141, 192);
+            // background-color: #4f4c69;
+            background-color: $chats-header-color;
             display: flex;
             align-items: center;
         }
         .chats-search {
             input {
-                background-color: rgb(116, 112, 152);
+                // background-color: #3c3a50;
+                background-color: $chats-header-color;
                 padding: 10px;
                 padding-left: 30px;
                 width: 396px;
@@ -338,7 +357,9 @@ $container-width: 1440px;
             gap: 20px;
         }
         .search-result:hover {
-            background-color: rgb(116, 112, 152);
+            // background-color: rgb(116, 112, 152);
+            background-color: $chats-header-color;
+
         }
         .burger-menu {
             display: flex;
@@ -354,7 +375,9 @@ $container-width: 1440px;
             width: 260px;
             border-radius: 15px;
             box-shadow: 10px 10px 10px #23282e;
-            background-color: rgb(173, 168, 218);
+            // background-color: rgb(173, 168, 218);
+            background-color: $chats-header-color;
+            overflow: hidden;
             top: 68px;
             left: 1px;
             ul {
@@ -371,6 +394,13 @@ $container-width: 1440px;
             }
             li:hover {
                 background-color: rgb(116, 112, 152);
+            }
+            .dark-side {
+              justify-content: space-between;
+            }
+            label {
+              display: flex;
+              gap: 20px;
             }
             img {
                 width: 24px;
@@ -410,3 +440,5 @@ $container-width: 1440px;
 //         border-radius: 50%;
 //     }
 // }
+
+

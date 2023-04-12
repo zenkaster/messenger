@@ -5,11 +5,11 @@
   font-family: "Roboto", sans-serif;
   text-decoration: none;
   list-style-type: none;
-  color: blacks;
+  color: black;
 }
 
 .container {
-  width: 1440px;
+  width: 99vw;
   margin: auto;
 }
 .container .sign {
@@ -131,7 +131,6 @@
 .container .sign .title-forms .form-wrapper form #entr-send {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #7fff7f;
   margin-bottom: 10px;
 }
 .container .sign .title-forms .form-wrapper form #registr-send {
@@ -186,16 +185,17 @@
   width: 7px;
   border-radius: 5px;
 }
-.container-of-chats .all-chat {
-  width: 75vw;
+.container-of-chats .all-chats {
+  width: 488px;
   height: 100vh;
+  background-color: white;
 }
 .container-of-chats .chat-header {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 66px;
-  background-color: #928dc0;
+  background-color: white;
 }
 .container-of-chats .chat {
   display: flex;
@@ -212,12 +212,12 @@
   width: 64px;
 }
 .container-of-chats .chats-header {
-  background-color: #928dc0;
+  background-color: white;
   display: flex;
   align-items: center;
 }
 .container-of-chats .chats-search input {
-  background-color: #747098;
+  background-color: white;
   padding: 10px;
   padding-left: 30px;
   width: 396px;
@@ -235,7 +235,7 @@
   width: 467px;
   border-radius: 15px;
   box-shadow: 10px 10px 10px #23282e;
-  background-color: #ada8da;
+  background-color: white;
   top: 68px;
   left: 1px;
   flex-direction: column;
@@ -266,7 +266,7 @@
   width: 260px;
   border-radius: 15px;
   box-shadow: 10px 10px 10px #23282e;
-  background-color: #ada8da;
+  background-color: white;
   top: 68px;
   left: 1px;
 }
@@ -283,14 +283,21 @@
   font-size: 20px;
 }
 .container-of-chats .burger-content li:hover {
-  background-color: #747098;
+  background-color: #8e8baa;
+}
+.container-of-chats .burger-content .dark-side {
+  justify-content: space-between;
+}
+.container-of-chats .burger-content label {
+  display: flex;
+  gap: 20px;
 }
 .container-of-chats .burger-content img {
   width: 24px;
 }
 .container-of-chats .line {
   width: 30px;
-  border: 2px solid white;
+  border: 2px solid black;
 }
 
 .hide {
